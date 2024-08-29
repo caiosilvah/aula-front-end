@@ -6,8 +6,12 @@
     <title>Layouts flexiveis com flexbox</title>
     <style>
         section{
+           
             display: flex;
-            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content:flex-start;
+            align-items: stretch;
 
             width: 700px;
             height: 500px;
@@ -17,6 +21,10 @@
         }
 
          article {
+
+                display: flex;
+                justify-content: center;
+                align-self: center;
                 width: 100px;
                 height: 100px;
                 margin-bottom: 10px;
@@ -30,9 +38,16 @@
 <body>
     
     <section>
-        <article></article>
-        <article></article>
-        <article></article>
+        <article>Item 1</article>
+        <article>Item 2</article>
+        <article>Item 3</article>
+        <article>Item 4</article>
+        <article>Item 5</article>
+        <article>Item 6</article>
+        <article>Item 7</article>
+        <article>Item 8</article>
+        <article>Item 9</article>
+        <article>Item 10</article>
     </section>
 
 </body>
